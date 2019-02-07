@@ -46,11 +46,9 @@ class App extends Component {
   }
 
   fetchEndpoint = async() => {
-    console.log(JSON.stringify(this.state.requestBody))
     try {
       const response = await fetch(this.state.returnedURL)
       const result = await response.json()
-      console.log(result)
       if (result.length > 1) {
         this.setState({responseStatus: response.status, fetchResult: result})
       } else {
