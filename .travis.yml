@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- v10.8.0
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: A1SmEzf3eTHCQf0+Q0Xd/qnK6H6QbGG28QSxZMUVErwzRcoN7W8HuiJvuxkRWyBiQn7tLnkQ2+hRxJ8nA3hmA5NThMANOdyaNiau4mi8wT+hY3oM6kYbLmy6HPzlwvy58SJOxo4rPio4GzBeHKxrbgS1Lpu1zUY9kHqOp4EYQPmOqYXmGWwXNtJS1wI/CDrQ6+jCgwfpd0WV43vYitgq8cTlhdBBgdlZ2+bAjoOnJLUm8a+SXNAsCOP5CN2rd8UXmjZ9xYwMmJ+wJl4Af2YSb3sNE3vqKTQRJytNvI/P/YCeyUEH5qnVxdnVZYE/CmnKMTKOdb8S++5aqqTuG4u62v+8EYxWv/8GFrLQrgfs7mp+wn0sH3BP2+eG/YqPurxq/AAue0f3t/ZUpqUKZ0qU+qGVmtt9oL2WISJU22AjOzYBj/wAk8A+yg84i+txZ5r3ye6U3HJzm8zXiV5xWmZuysESuRSraOQrpaA+Iuc9Q0PuS4PjeW1CLQoqb4/zQCStufrkzPOzL6UjyUace2NU6RZKzyrquohL/2P395JDxH1Yk27rRZGFyYkH4IOFk8TfJ71MP7vLPTxLia7nyq2vvm0tgMz9JIbvzDInHvGBRj3Qsp+OCr2mW6vkA2WscWXxswV470T7zt4W54YQXMIlmYMUs+s+qhjAaQZh5m3VozI=
+  app: cobrewsnew
+  skip_cleanup: true
