@@ -31,7 +31,7 @@ class App extends Component {
     const id = this.refs.idSelect.value ? `/${this.refs.idSelect.value}` : ''
     const query = this.refs.querySelect.value ?  `?${this.refs.querySelect.value}=${this.queryClean(this.refs.citySelect.value)}` : ''
     const subTable = this.refs.subTableSelect.value ? `/beers` : ''
-    returnedURL = 'https://colorado-brews.herokuapp.com' + url + id + query + subTable
+    returnedURL = 'http://colorado-brews.herokuapp.com' + url + id + query + subTable
     this.setState({error: '', fetchResult: [], returnedURL, responseStatus: ''})
   }
 
